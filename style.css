@@ -24,8 +24,7 @@ ul li a {
 	text-decoration: none;
 	color: #fff;
 	padding: 5px 20px;
-	border: 1px solid transparent;
-	transition: 0.5s ease;
+	transition: 1s ease;
 }
 
 .HomeQ a:hover{
@@ -49,6 +48,12 @@ ul li a {
 	background-image: linear-gradient(#f85845, #FFFFFF);
 	color: #80e742;
 	border-radius: 20px;
+}
+
+.QuarterQ a:hover{
+    background-image: linear-gradient(#a702fa, #fff);
+    color: #eff247;
+    border-radius: 20px;
 }
 
 .logo img{
