@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url(images/aa.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+}
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right:60px ;
+}
+ul li{
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	transition: 1s ease;
+}
+
+.HomeQ a:hover{
+	background-image: linear-gradient(#80e742, #FFFFFF);
+	color: #f85845;
+	border-radius: 20px;
+}
+.FFQ a:hover{
+	background-image: linear-gradient(#eff247, #FFFFFF);
+	color: #45c9f0;
+	border-radius: 20px;
+}
+
+.AboutQ a:hover{
+	background-image: linear-gradient(#45c9f0, #FFFFFF);
+	color: #f85845;
+	border-radius: 20px;
+}
+
+.MissionQ a:hover{
+	background-image: linear-gradient(#f85845, #FFFFFF);
+	color: #80e742;
+	border-radius: 20px;
+}
+
+.QuarterQ a:hover{
+    background-image: linear-gradient(#a702fa, #fff);
+    color: #eff247;
+    border-radius: 20px;
+}
+
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.main{
+	padding-top: 10px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 60px;
+	transform: translateY(20px);
+}
+
+.button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-family: Century;
+	font-size: 30px;
+	font-variant: small-caps;
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 5px 20px;
+	color: #fff;
+	transition: 0.6s ease;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.PageOne {
+	padding: 100px;
+	display: flex;
+	overflow: hidden;
+}
+
+.PageOneText {
+	padding: 50px 100px 0px 100px;
+	font-size: 20px;
+	transform: translateX(-700px);
+}
+
+.PageTwo {
+	background-color: #f3f6f7;
+	padding: 80px 150px 80px 150px;
+	text-align: center;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+.PageTwoText {
+	transform: translateY(-300px);
+}
+
+.PageThree {
+	background-color: #ffffff;
+	padding: 100px 50px 0px 180px;
+	display: flex;
+	font-size: 22px;
+
+}
+.PageThreeText {
+	padding: 0px 100px 100px 0px;
+}
+
+.PageThreeText2 {
+	padding: 30px 0px 0px 0px;
+}
+
+.PageOneIMG {
+	transform: translateX(600px);
+	opacity: 0;
+    transition: all 1s;
+}
+
+.show1 {
+    opacity: 1;
+}

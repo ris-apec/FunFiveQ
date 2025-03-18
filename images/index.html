@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Fun Five Quests</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+</head>
+<body>
+	<header>
+		<div class="main">
+		<div class="logo">
+			<img src="images/logo.jfif" style="width: 100px;">
+		</div>
+		
+		 <ul>
+         <li class="HomeQ"><a href="index.html">Fun Five Q</a></li>
+		 <li class="FFQ"><a href="Quarter1.html">Quarter 1</a></li>
+		 <li class="AboutQ"><a href="Quarter2.html">Quarter 2</a></li>
+		 <li class="MissionQ"><a href="Quarter3.html">Quarter 3</a></li>
+         <li class="QuarterQ"><a href="Quarter4.html">Quarter 4</a></li>
+		</ul>
+
+		 </div>
+		 <div class="title">
+		 	<h1>FUN FIVE QUESTS</h1>
+		 </div>
+		 <div class="button">
+            <p> fun ways to get motivated </p>
+		 </div>
+
+	</header>
+
+    <section class="PageOne" id="PageOne">
+        <div class="PageOneText">
+            <h1>“Fun ways to get motivated.”</h1>
+            <br>
+            <p>We are Fun Five Q. Our channel strives to promote fun, creativity and bravery to our audience. Come with us to explore the world of endless possibilities where multiple challenges await!</p>
+            <br>
+            <p>Fun Five Q is all about taking on challenges and tasks while having a great time. We don't just aim to entertain; we're dedicated to educating our audience as well. We'll include useful facts and informative content that is both interesting and engaging, all while keeping the concept of fun in mind. We believe that education and entertainment can go hand-in-hand, and we strive to create content that leaves our audience feeling entertained, inspired, and informed.</p>
+        </div>
+        <div class="PageOneIMG">
+            <img src="https://i.pinimg.com/474x/85/02/3c/85023c98356db19f504543478248306f.jpg" style="border-radius: 20px;">
+        </div>
+    </section>
+
+    <section class="PageTwo" id="PageTwo">
+        <div class="PageTwoText">
+            <h1 style="font-size: 55px;"> Our Mission </h1>
+            <br>
+            <p> Our mission is to produce and share inspirational, educational, motivating, and energizing content to uplift and empower individuals to become the best version of themselves.</p>
+        </div>
+    </section>
+
+    <section class="PageThree" id="PageThree">
+        <div class="PageThreeText">
+            <h1> Our Team</h1>
+            <br>
+            <p>Thank you for visiting our website! We would love <br>for you to give us feedback by contacting our team.<br> Also before you guys go make sure to check our <br> merchandise we are giving some hoodies.<br> You can wear this since it gives us appreciation and <br>loyalty because we know that your our supporter. <br>Let’s go FUN FIVE QUESTS. </p>
+        </div>
+        <div class="PageThreeText2">
+            <p>Khloe Beatrice Besa</p>
+            <p>Jessie Biando</p>
+            <p>Alexis Caparas</p>
+            <p>Mc Queen Guevarra</p>
+            <p>John Patrick Salcedo</p>
+            <p>Iesha Gift Vengco</p>
+            <br>
+            <p>Contact: +63 931 028 0524</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="gsap-member/minified/gsap.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('show1');
+    } else {
+        entry.target.classList.remove('show1');
+    }
+    });
+    });
+        
+    const hiddenElements = document.querySelectorAll('.PageOneIMG');
+    hiddenElements.forEach((el) => observer.observe(el));
+        document.addEventListener("DOMContentLoaded", (event) => {
+         gsap.registerPlugin(ScrollTrigger)
+    });
+
+    gsap.to('.PageOneIMG', {
+        x: -10, 
+        scrollTrigger: {
+            trigger: '.FirstPage',
+    }
+    })
+    gsap.to('.PageOneText', {
+        x: 200, 
+        duration: 2,
+        scrollTrigger: {
+            trigger: '.FirstPage',
+            scrub: true,
+    }
+    })
+    gsap.to('.PageTwoText', {
+        y: 10, 
+        duration: 1,
+        scrollTrigger: {
+            trigger: '.PageTwo',
+            scrub: true,
+    }
+    })
+
+    </script>
+
+</body>
+</html>

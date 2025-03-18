@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url(images/aa.jpg);
+	height: 20vh;
+	background-position: center;
+	background-size: cover;
+}
+ul{
+	float:right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right:60px ;
+}
+ul li{
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	transition: 1s ease;
+}
+
+.HomeQ a:hover{
+	background-image: linear-gradient(#80e742, #FFFFFF);
+	color: #f85845;
+	border-radius: 20px;
+}
+.FFQ a:hover{
+	background-image: linear-gradient(#eff247, #FFFFFF);
+	color: #45c9f0;
+	border-radius: 20px;
+}
+
+.AboutQ a:hover{
+	background-image: linear-gradient(#45c9f0, #FFFFFF);
+	color: #f85845;
+	border-radius: 20px;
+}
+
+.MissionQ a:hover{
+	background-image: linear-gradient(#f85845, #FFFFFF);
+	color: #80e742;
+	border-radius: 20px;
+}
+
+.QuarterQ a:hover{
+    background-image: linear-gradient(#a702fa, #fff);
+    color: #eff247;
+    border-radius: 20px;
+}
+
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.main{
+	padding-top: 10px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.Quarter3 {	
+	display: flex;
+	text-align: center;
+	padding: 100px 100px 100px 150px;
+}
+
+.Caption1 {
+	font-size: 25px;
+}
+
+.Caption2 {
+	font-size: 25px;
+}
